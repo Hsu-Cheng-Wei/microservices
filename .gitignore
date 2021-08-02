@@ -69,6 +69,9 @@ ScaffoldingReadMe.txt
 # StyleCop
 StyleCopReport.xml
 
+#rabbitmq mysql volumn
+volumn/
+
 # Files built by Visual Studio
 *_i.c
 *_p.c
@@ -213,6 +216,9 @@ csx/
 # Microsoft Azure Emulator
 ecf/
 rcf/
+
+#rabbitMQ Mysql
+#volumn/
 
 # Windows Store app package directories and files
 AppPackages/
