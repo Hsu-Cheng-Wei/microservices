@@ -1,0 +1,22 @@
+nameOverride: ""
+
+volumeFullName: nfs-vol-mysql
+
+defaultTag: latest
+
+image:
+    registry: docker.io
+    repository: mysql
+    tag: 8.0.16
+    pullPolicy: IfNotPresent
+    resources:
+      limits: {}
+      requests: {}
+
+persistentVolumeClaimName: nfs-pvc-mysql
+
+service:
+  name: mysql-service
+  type: NodePort
+  port: 3306
+

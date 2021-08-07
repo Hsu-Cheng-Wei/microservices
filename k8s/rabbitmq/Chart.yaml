@@ -1,0 +1,12 @@
+apiVersion: v2
+name: rabbitmq
+description: Deploy RabbitMQ
+
+dependencies:
+- name: common
+
+type: application
+
+version: 3.8.2
+
+appVersion: "3.8.2-management"

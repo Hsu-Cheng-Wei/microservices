@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nfs-pvc-mysql  # 名稱
+spec:  # 跟volumnes裡面的spec是一樣的東西
+  storageClassName: nfs
+  accessModes:  # 設置訪問模式 要和PV.Spec.accessModes設置一樣
+    - ReadWriteMany
+    #- ReadWriteOnce
+    #- ReadOnlyMany
+  resources:
+      requests:
+          storage: 1Gi

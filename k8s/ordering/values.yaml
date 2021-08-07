@@ -1,0 +1,19 @@
+replicaCount: 1
+
+defaultTag: latest
+
+image: 
+  repository: 192.168.197.128:5000/geektimeorderingapi
+  tag: 1.0.1
+  pullPolicy: Always
+
+configMap:
+  name: ordering-config
+
+service:
+  name: ordering-service
+  type: NodePort
+  port: 80
+
+ingress:
+  hostName: "k8s.funtl.com"

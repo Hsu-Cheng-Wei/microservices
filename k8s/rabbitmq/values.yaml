@@ -1,0 +1,19 @@
+nameOverride: ""
+
+defaultTag: latest
+
+image:
+    registry: docker.io
+    repository: rabbitmq
+    tag: 3.8.2-management
+    pullPolicy: IfNotPresent
+    resources:
+      limits: {}
+      requests: {}
+
+persistentVolumeClaimName: nfs-pvc-rabbitmq
+
+service:
+  name: rabbitmq-service
+  type: NodePort
+
