@@ -7,9 +7,9 @@ services:
       context: .
       dockerfile: ./GeekTime.Ordering.API/Dockerfile
     depends_on:
-      - rabbitMq
-      - mysql
-  rabbitMq:
+      - rabbitmq-service
+      - mysql-service
+  rabbitmq-service:
     image: rabbitmq:3.8.2-management
     container_name: rabbitmq
     ports:
@@ -24,7 +24,7 @@ services:
     environment:
         RABBITMQ_DEFAULT_USER: root
         RABBITMQ_DEFAULT_PASS: 123456
-  mysql:
+  mysql-service:
     image: mysql
     container_name: mysql
     restart: always

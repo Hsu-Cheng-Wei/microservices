@@ -15,13 +15,9 @@
   
   <ItemGroup>
     <Compile Remove="DomainEventHandlers\**" />
-    <Compile Remove="Queries\**" />
     <Content Remove="DomainEventHandlers\**" />
-    <Content Remove="Queries\**" />
     <EmbeddedResource Remove="DomainEventHandlers\**" />
-    <EmbeddedResource Remove="Queries\**" />
     <None Remove="DomainEventHandlers\**" />
-    <None Remove="Queries\**" />
   </ItemGroup>
   
   <ItemGroup>
